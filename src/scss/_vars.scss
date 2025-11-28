@@ -1,0 +1,21 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Times", sans-serif;
+  --content-width: 980px;
+  --container-offset: 5px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --border-color: #5e4696ba;
+  --bg-color: #93b2ecba;
+  --bg-color-1: rgb(158 158 247);
+  --bg-color-2: rgb(198 199 255);
+  --bg-color-3: rgb(183 182 231);
+  --bg-color-active: rgb(91, 115, 161);
+  --text-color: #333;
+}
+
+// $color-border: green;

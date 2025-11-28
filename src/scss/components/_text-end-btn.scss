@@ -1,0 +1,21 @@
+.mybtn {
+  position: fixed;
+  right: 10px;
+  bottom: 1vh;
+  z-index: 1000;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(130, 195, 242);
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.mybtn:focus, .mybtn:hover, .mybtn:active {
+  opacity: 1;
+}
+
+.d-none {
+  display: none;
+}

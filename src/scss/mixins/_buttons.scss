@@ -1,0 +1,29 @@
+@mixin btn-eff {
+  transition: outline 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  &:focus {
+    outline: 1px solid var(--border-color);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    outline: 1px solid var(--bg-color-1);
+    background-color: var(--bg-color-2);
+  }
+
+  &:active {
+    outline: 1px solid var(--bg-color-1);
+    background-color: var(--bg-color-active);
+  }
+}
+
+@mixin btn-bg-eff {
+  &:focus::before,
+  &:hover::before {
+    background-image: url('../img/vmenuhovereditemicon.png');
+  }
+
+  &:active::before {
+    background-image: url('../img/vmenuactiveitemicon.png');
+  }
+}

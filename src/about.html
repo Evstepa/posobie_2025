@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <div class="container book">
+        <div class="book__menu">
+          <nav class="nav book__nav v-nav">
+            <ul class="list-reset v-nav__list">
+              <li class="v-nav__item">
+                <a href="./part-1.html" class="btn-reset v-nav__btn">
+                  Математика
+                </a>
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-2.html" class="btn-reset v-nav__btn">
+                  Физика
+                </a>
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-3.html" class="btn-reset v-nav__btn">
+                  Химия
+                </a>
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-4.html" class="btn-reset v-nav__btn">
+                  Информатика
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="book__content">
+          <div class="book__content-top">
+            <h2 class="book__title">Заключение</h2>
+            <p class="book__descr">
+              Настоящее пособие, предназначенное для работы с&nbsp;иностранными гражданами на&nbsp;подготовительном факультете, включает в&nbsp;себя тексты по&nbsp;избранным темам математики, физики, химии и&nbsp;информатике и&nbsp;задания для понимания и&nbsp;закрепления изучаемых тем.
+            </p>
+            <p class="book__descr">
+              Настоящее пособие рекомендуется для использования в&nbsp;качестве дополнительного учебного материала при проведении аудиторных занятий по&nbsp;математике, физике, химии, информатики, а&nbsp;также для организации самостоятельной работы по&nbsp;этим дисциплинам.
+            </p>
+            <p class="book__descr">
+              Вдумчивая постоянная работа с&nbsp;материалами учебного пособия позволит читателю научиться понимать и&nbsp;грамотно использовать научную терминологию на&nbsp;всём протяжении его обучения в&nbsp;университете, независимо от&nbsp;будущей специальности, работать с&nbsp;научными текстами.
+            </p>
+            <p class="book__descr">
+              Авторы выражают надежду, что данное пособие станет достойным помощником будущим специалистам в&nbsp;их&nbsp;начальном пути освоения русского языка, научного стиля речи и&nbsp;специальных дисциплин, требующих знания математики, физики, химии.
+            </p>
+          </div>
+          <div class="book__content-middle">
+            <h2 class="book__title">Сведения об авторах</h2>
+            <p class="book__descr">
+              Кандидат технических наук, доцент Степаненко Игорь Тимофеевич
+            </p>
+            <p class="book__descr">
+              Кандидат технических наук Колмакова Марина Анатольевна
+            </p>
+            <p class="book__descr">
+              Кандидат физико-математических наук, доцент Седова Наталия Викторовна
+            </p>
+            <p class="book__descr">
+              Кандидат физико-математических наук, доцент Степаненко Елена Викторовна
+            </p>
+            <p class="book__descr">
+              Федорова Наталия Юрьевна
+            </p>
+          </div>
+          <img class="book__content-end" src="./img/title_back.jpg" alt="Сведения об издании" style="width: 75%;">
+        </div>
+      </div>
+    </main>
+    @include('partials/footer.html')
+  </div>
+  @include('partials/text-end-btn.html')
+</body>
+
+</html>

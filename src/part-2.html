@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <div class="container book">
+        <div class="book__menu">
+          <nav class="nav book__nav v-nav">
+            <ul class="list-reset v-nav__list">
+              <li class="v-nav__item">
+                <a href="./part-1.html" class="btn-reset v-nav__btn">
+                  Математика
+                </a>
+
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-2.html" class="btn-reset v-nav__btn is-active">
+                  Физика
+                </a>
+                <ul class="list-reset book__subnav subnav">
+                  <li class="subnav__item">
+                    <a href="./part-2-1.html" class="btn-reset subnav__btn">
+                      Текст 1
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-2-2.html" class="btn-reset subnav__btn">
+                      Текст 2
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-2-3.html" class="btn-reset subnav__btn">
+                      Текст 3
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-2-4.html" class="btn-reset subnav__btn">
+                      Текст 4
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-2-5.html" class="btn-reset subnav__btn">
+                      Текст 5
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-2-6.html" class="btn-reset subnav__btn">
+                      Текст 6
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-2-7.html" class="btn-reset subnav__btn">
+                      Текст 7
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-2-8.html" class="btn-reset subnav__btn">
+                      Глоссарий
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-2-9.html" class="btn-reset subnav__btn">
+                      Тесты
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-2-10.html" class="btn-reset subnav__btn">
+                      Литература
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-3.html" class="btn-reset v-nav__btn">
+                  Химия
+                </a>
+
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-4.html" class="btn-reset v-nav__btn">
+                  Информатика
+                </a>
+
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="book__content">
+          <h2 id="part-2" class="book__title">Физика</h2>
+          <p class="book__descr">
+            Здесь представлены тексты для чтения студентами медико-биологического профиля подготовительных факультетов. Тексты сопровождаются иллюстрациями, портретами учёных. Также приведены глоссарий, тесты для проверки и самоконтроля, список использованных источников.
+          </p>
+
+          <ul class="list-reset list book__list-start">
+            <li class="list__item">
+              <a href="./part-2-1.html" class="btn-reset list__link book__link">
+                Текст 1. Физика и медицина
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="./part-2-2.html" class="btn-reset list__link book__link">
+                Текст 2. Биофизика
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="./part-2-3.html" class="btn-reset list__link book__link">
+                Текст 3. Физические методы диагностики и исследований
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="./part-2-4.html" class="btn-reset list__link book__link">
+                Текст 4. Естествоиспытатели
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="./part-2-5.html" class="btn-reset list__link book__link">
+                Текст 5. Эра электричества
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="./part-2-6.html" class="btn-reset list__link book__link">
+                Текст 6. Магнитные методы лечения и диагностики
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="./part-2-7.html" class="btn-reset list__link book__link">
+                Текст 7. Атомная и ядерная физика на службе у медицины
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="./part-2-8.html" class="btn-reset list__link book__link">
+                Глоссарий
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="./part-2-9.html" class="btn-reset list__link book__link">
+                Тесты для проверки и самоконтроля
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="./part-2-10.html" class="btn-reset list__link book__link">
+                Список использованных источников
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </main>
+    @include('partials/footer.html')
+  </div>
+  @include('partials/text-end-btn.html')
+</body>
+
+</html>

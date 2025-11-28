@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <div class="container book">
+        <div class="book__menu">
+          <nav class="nav book__nav v-nav">
+            <ul class="list-reset v-nav__list">
+              <li class="v-nav__item">
+                <a href="./part-1.html" class="btn-reset v-nav__btn">
+                  Математика
+                </a>
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-2.html" class="btn-reset v-nav__btn">
+                  Физика
+                </a>
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-3.html" class="btn-reset v-nav__btn">
+                  Химия
+                </a>
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-4.html" class="btn-reset v-nav__btn">
+                  Информатика
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="book__content" style="text-align: center;">
+          <img class="book__content-img" src="./img/cover.jpg" alt="Обложка">
+          <img class="book__content-img" src="./img/title.jpg" alt="Титульный лист">
+          <img class="book__content-img" src="./img/title_1.jpg" alt="Оборот титульного листа">
+        </div>
+      </div>
+    </main>
+    @include('partials/footer.html')
+  </div>
+  @include('partials/text-end-btn.html')
+</body>
+
+</html>

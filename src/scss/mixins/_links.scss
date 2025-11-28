@@ -1,0 +1,16 @@
+@mixin link-eff {
+  outline-offset: 4px;
+  transition: outline 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  &:focus {
+    outline: 1px solid var(--border-color);
+  }
+
+  &:hover {
+    outline: 1px solid var(--bg-color-1);
+  }
+
+  &:active {
+    outline: 1px solid var(--bg-color-2);
+  }
+}

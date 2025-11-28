@@ -1,0 +1,30 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  gap: 15px;
+
+  &__item {
+    width: fit-content;
+
+    &-img {
+      width: -webkit-fill-available;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 100%;
+    color: var(--text-color);
+    gap: 5px;
+
+    @include link-eff;
+  }
+}

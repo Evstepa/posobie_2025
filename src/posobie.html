@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <div class="container book">
+        <div class="book__menu">
+          <nav class="nav book__nav v-nav">
+            <ul class="list-reset v-nav__list">
+              <li class="v-nav__item">
+                <a href="./part-1.html" class="btn-reset v-nav__btn">
+                  Математика
+                </a>
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-2.html" class="btn-reset v-nav__btn">
+                  Физика
+                </a>
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-3.html" class="btn-reset v-nav__btn">
+                  Химия
+                </a>
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-4.html" class="btn-reset v-nav__btn">
+                  Информатика
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="book__content">
+          <h2 class="book__title">Предисловие</h2>
+          <p class="book__descr">
+            Настоящее пособие предназначено для использования при изучении иностранными гражданами курсов &laquo;Математика&raquo;, &laquo;Физика&raquo;, &laquo;Химия&raquo;, &laquo;Информатика&raquo; как в&nbsp;рамках обучения на&nbsp;подготовительном факультете, так и&nbsp;в&nbsp;дальнейшем при изучении данных дисциплин на&nbsp;более глубоком, продвинутом уровне.
+          </p>
+          <p class="book__descr">
+            Цели пособия:
+          </p>
+          <ul class="book__descr-list">
+            <li>
+              познакомить иностранных слушателей с языком математики, физики, химии, информатики;
+            </li>
+            <li>
+              изложить материал в структурированной форме;
+            </li>
+            <li>
+              сформировать навыки работы с&nbsp;научным текстом на&nbsp;занятиях и&nbsp;при самостоятельной работе.
+            </li>
+          </ul>
+          <p class="book__descr">
+            Пособие состоит из&nbsp;четырёх разделов.
+          </p>
+          <p class="book__descr">
+            Раздел &laquo;Математика&raquo; включает в&nbsp;себя ...
+          </p>
+          <p class="book__descr">
+            Раздел &laquo;Физика&raquo; включает в&nbsp;себя ...
+          </p>
+          <p class="book__descr">
+            Раздел &laquo;Химия&raquo; включает в&nbsp;себя ...
+          </p>
+          <p class="book__descr">
+            Раздел &laquo;Информатика&raquo; включает в&nbsp;себя ...
+          </p>
+          <p class="book__descr">
+            Материалы разделов сопровождаются графическими иллюстрациями.
+          </p>
+          <p class="book__descr">
+            Материал разделов &laquo;Математика&raquo; и &laquo;Информатика&raquo;&nbsp;&mdash; Еленой Викторовной Степаненко, материал раздела &laquo;Физика&raquo;&nbsp;&mdash; Наталией Викторовной Седовой, материал раздела &laquo;Химия&raquo;&nbsp;&mdash; Мариной Анатольевной Колмаковой. Общая редакция материалов пособия выполнена Игорем Тимофеевичем Степаненко.
+          </p>
+        </div>
+
+      </div>
+    </main>
+    @include('partials/footer.html')
+  </div>
+  @include('partials/text-end-btn.html')
+</body>
+
+</html>
