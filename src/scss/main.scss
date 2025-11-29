@@ -1,13 +1,14 @@
 // базовые подключения
-@use "vars";
-@use "mixins";
-@use "fonts";
-@use "settings";
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
 
 // подключения компонентов страницы
-@use "./components/header";
-@use "./components/book";
-@use "./components/posobie";
-@use "./components/part";
-@use "./components/footer";
-@use "./components/text-end-btn";
+@import "./components/header";
+@import "./components/book";
+@import "./components/posobie";
+@import "./components/part";
+@import "./components/footer";
+@import "./components/text-end-btn";
