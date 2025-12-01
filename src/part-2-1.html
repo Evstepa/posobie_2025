@@ -23,7 +23,7 @@
                 </a>
                 <ul class="list-reset book__subnav subnav">
                   <li class="subnav__item">
-                    <a href="./part-2-1.html" class="btn-reset subnav__btn">
+                    <a href="./part-2-1.html" class="btn-reset subnav__btn is-active">
                       Раздел 1
                     </a>
                   </li>
@@ -70,43 +70,38 @@
           </nav>
         </div>
         <div class="book__content">
-          <h2 id="part-2" class="book__title">Физика</h2>
-          <p class="book__descr">
-            Здесь представлены тексты для чтения, описывающие основные понятия механики, кинематики, динамики, статики, движения жидкостей и&nbsp;газов и&nbsp;их&nbsp;применение в&nbsp;физике живых организмов. В конце каждого раздела приведены тесты для проверки и самоконтроля.
-          </p>
+          <h2 id="part-2" class="book__title">Раздел&nbsp;1. Механика. Основные понятия</h2>
 
-          <ul class="list-reset list book__list-start">
-            <li class="list__item">
-              <a href="./part-2-1.html" class="btn-reset list__link book__link">
-                Раздел 1. Механика. Основные понятия
-              </a>
-            </li>
-            <li class="list__item">
-              <a href="./part-2-2.html" class="btn-reset list__link book__link">
-                Раздел 2. Кинематика
-              </a>
-            </li>
-            <li class="list__item">
-              <a href="./part-2-3.html" class="btn-reset list__link book__link">
-                Раздел 3. Динамика
-              </a>
-            </li>
-            <li class="list__item">
-              <a href="./part-2-4.html" class="btn-reset list__link book__link">
-                Раздел 4. Статика
-              </a>
-            </li>
-            <li class="list__item">
-              <a href="./part-2-5.html" class="btn-reset list__link book__link">
-                Раздел 5. Движение жидкостей и газов
-              </a>
-            </li>
-            <li class="list__item">
-              <a href="./part-2-6.html" class="btn-reset list__link book__link">
-                Список использованных источников
-              </a>
-            </li>
-          </ul>
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;1.</b> Основные понятия механики</summary>
+            @include('partials/part-2/text-2-1.html')
+          </details>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;2.</b> Основные понятия биомеханики</summary>
+            @include('partials/part-2/text-2-2.html')
+          </details>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;3.</b> Основные оси и плоскости тела человека</summary>
+            @include('partials/part-2/text-2-3.html')
+          </details>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;4.</b> Положение тела в пространстве</summary>
+            @include('partials/part-2/text-2-4.html')
+          </details>
+
+          <div class="book__content-end">
+            <h3 class="book__subtitle">Итоговый тест по&nbsp;разделу</h3>
+          </div>
+
+          <details class="detail book__detail">
+            <summary>Выполнить</summary>
+            <div class="book__test">
+              @include('partials/part-2/test-2-1.html')
+            </div>
+          </details>
 
         </div>
       </div>
