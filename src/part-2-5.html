@@ -28,7 +28,7 @@
                     </a>
                   </li>
                   <li class="subnav__item">
-                    <a href="./part-2-2.html" class="btn-reset subnav__btn is-active">
+                    <a href="./part-2-2.html" class="btn-reset subnav__btn">
                       Раздел 2
                     </a>
                   </li>
@@ -43,7 +43,7 @@
                     </a>
                   </li>
                   <li class="subnav__item">
-                    <a href="./part-2-5.html" class="btn-reset subnav__btn">
+                    <a href="./part-2-5.html" class="btn-reset subnav__btn is-active">
                       Раздел 5
                     </a>
                   </li>
@@ -70,50 +70,56 @@
           </nav>
         </div>
         <div class="book__content">
-          <h2 id="part-2-2" class="book__title">Раздел&nbsp;2. Кинематика</h2>
-          <p class="book__descr">
-            Положение материальной точки в&nbsp;пространстве можно задать с&nbsp;помощью:
-          </p>
-          <ol class="book__lits">
-            <li class="book__lit">
-              координат&nbsp;<i>x</i>, <i>y</i>, <i>z</i>&nbsp;(координатный способ)
-            </li>
-
-            <figure class="book__figure book__figure-text">
-              <img class="book__img book__img-big book__img-text" loading="lazy" src="./img/part-2/shema-2-2.jpg" alt="координатный способ">
-              <figcaption>Точка А&nbsp;имеет координаты&nbsp;<i>x</i>, <i>y</i>&nbsp;и&nbsp;<i>z</i>: <i>А</i>(<i>x</i>, <i>y</i>, <i>z</i>)</figcaption>
-            </figure>
-
-            <li class="book__lit">
-              радиус-вектора <b>r</b>&nbsp;(векторный способ)
-            </li>
-
-            <figure class="book__figure book__figure-text">
-              <img class="book__img book__img-big book__img-text" loading="lazy" src="./img/part-2/shema-2-3.jpg" alt="векторный способ">
-              <figcaption><b>r</b> = <b>i</b><i>x</i> + <b>j</b><i>y</i> + <b>k</b><i>z</i></figcaption>
-            </figure>
-
-          </ol>
-          <p class="book__descr">
-            Радиус-вектор точки&nbsp;&mdash; это вектор, который соединяет начало координат и&nbsp;эту точку.
-          </p>
-          <p class="book__descr">
-            Координатный и&nbsp;векторный способы описания движения эквивалентны.
-          </p>
+          <h2 id="part-2-5" class="book__title">Раздел&nbsp;5. Движение жидкостей и газов</h2>
 
           <details class="detail book__detail">
-            <summary><b>Тема&nbsp;5.</b> Пространственные характеристики движения</summary>
-            @include('partials/part-2/text-2-5.html')
+            <summary><b>Тема&nbsp;19.</b> Гидростатика</summary>
+            <object class="book__data" data="./part-2/2-19.pdf" type="application/pdf"></object>
           </details>
 
           <details class="detail book__detail">
-            <summary><b>Тема&nbsp;6.</b> Временные характеристики движения</summary>
-            @include('partials/part-2/text-2-6.html')
+            <summary><b>Тема&nbsp;20.</b> Движение идеальной жидкости</summary>
+            <object class="book__data" data="./part-2/2-20.pdf" type="application/pdf"></object>
           </details>
 
           <details class="detail book__detail">
-            <summary><b>Тема&nbsp;7.</b> Пространственно-временные характеристики движения</summary>
-            <object class="book__data" data="./part-2/text-2-7.pdf" type="application/pdf"></object>
+            <summary><b>Тема&nbsp;21.</b> Динамическая и&nbsp;кинематическая вязкость</summary>
+            <object class="book__data" data="./part-2/2-21.pdf" type="application/pdf"></object>
+          </details>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;22.</b> Классификация жидкостей по&nbsp;вязким свойствам</summary>
+            <object class="book__data" data="./part-2/2-22.pdf" type="application/pdf"></object>
+          </details>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;23.</b> Сила и&nbsp;коэффициент поверхностного натяжения</summary>
+            @include('partials/part-2/text-2-23.html')
+          </details>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;24.</b> Смачивание</summary>
+            @include('partials/part-2/text-2-24.html')
+          </details>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;25.</b> Гидрофильные и гидрофобные жидкости</summary>
+            @include('partials/part-2/text-2-25.html')
+          </details>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;26.</b> Капиллярные явления</summary>
+            @include('partials/part-2/text-2-26.html')
+          </details>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;27.</b> Биофизические основы кровообращения</summary>
+            <object class="book__data" data="./part-2/2-27.pdf" type="application/pdf"></object>
+          </details>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;28.</b> Артериальное давление</summary>
+            @include('partials/part-2/text-2-28.html')
           </details>
 
           <div class="book__content-end">
@@ -123,7 +129,7 @@
           <details class="detail book__detail">
             <summary>Выполнить</summary>
             <div class="book__test">
-              @include('partials/part-2/test-2-2.html')
+              @include('partials/part-2/test-2-5.html')
             </div>
           </details>
 

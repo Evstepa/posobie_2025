@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <div class="container book">
+        <div class="book__menu">
+          <nav class="nav book__nav v-nav">
+            <ul class="list-reset v-nav__list">
+              <li class="v-nav__item">
+                <a href="./part-1.html" class="btn-reset v-nav__btn">
+                  Математика
+                </a>
+
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-2.html" class="btn-reset v-nav__btn is-active">
+                  Физика
+                </a>
+                <ul class="list-reset book__subnav subnav">
+                  <li class="subnav__item">
+                    <a href="./part-2-1.html" class="btn-reset subnav__btn">
+                      Раздел 1
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-2-2.html" class="btn-reset subnav__btn">
+                      Раздел 2
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-2-3.html" class="btn-reset subnav__btn is-active">
+                      Раздел 3
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-2-4.html" class="btn-reset subnav__btn">
+                      Раздел 4
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-2-5.html" class="btn-reset subnav__btn">
+                      Раздел 5
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-2-6.html" class="btn-reset subnav__btn">
+                      Литература
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-3.html" class="btn-reset v-nav__btn">
+                  Химия
+                </a>
+
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-4.html" class="btn-reset v-nav__btn">
+                  Информатика
+                </a>
+
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="book__content">
+          <h2 id="part-2-3" class="book__title">Раздел&nbsp;3. Динамика</h2>
+          <p class="book__descr">
+            Динамика и&nbsp;статика выделены в&nbsp;самостоятельные разделы механики. Это разделение обосновано для механических конструкций и&nbsp;сооружений, потому что через некоторый небольшой промежуток времени процессы деформации в&nbsp;механических конструкциях прекращаются и&nbsp;остаются только статические напряжения.
+          </p>
+          <p class="book__descr">
+            Для живых организмов такое разделение некорректно, потому что даже при прекращении механической работы, например при подъёме груза, продолжаются внутренние процессы в&nbsp;теле организма: расходуется энергия, протекают биохимические и&nbsp;физические процессы.
+          </p>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;8.</b> Инерционные характеристики тела</summary>
+            <object class="book__data" data="./part-2/2-8.pdf" type="application/pdf"></object>
+          </details>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;9.</b> Силовые характеристики тела</summary>
+            <object class="book__data" data="./part-2/2-9.pdf" type="application/pdf"></object>
+          </details>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;10.</b> Физиологические особенности воздействия невесомости и&nbsp;перегрузки на&nbsp;человека</summary>
+            @include('partials/part-2/text-2-10.html')
+          </details>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;11.</b> Момент силы</summary>
+            <object class="book__data" data="./part-2/2-11.pdf" type="application/pdf"></object>
+          </details>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;12.</b> Законы динамики</summary>
+            <object class="book__data" data="./part-2/2-12.pdf" type="application/pdf"></object>
+          </details>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;13.</b> Механическая работа, мощность и&nbsp;энергия</summary>
+            <object class="book__data" data="./part-2/2-13.pdf" type="application/pdf"></object>
+          </details>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;14.</b> Законы сохранения в&nbsp;механике</summary>
+            <object class="book__data" data="./part-2/2-14.pdf" type="application/pdf"></object>
+          </details>
+
+          <details class="detail book__detail">
+            <summary><b>Тема&nbsp;15.</b> Механические свойства живых тканей</summary>
+            <object class="book__data" data="./part-2/2-15.pdf" type="application/pdf"></object>
+          </details>
+
+          <div class="book__content-end">
+            <h3 class="book__subtitle">Итоговый тест по&nbsp;разделу</h3>
+          </div>
+
+          <details class="detail book__detail">
+            <summary>Выполнить</summary>
+            <div class="book__test">
+              @include('partials/part-2/test-2-3.html')
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </main>
+    @include('partials/footer.html')
+  </div>
+  @include('partials/text-end-btn.html')
+</body>
+
+</html>

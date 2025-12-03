@@ -23,7 +23,7 @@
                 </a>
                 <ul class="list-reset book__subnav subnav">
                   <li class="subnav__item">
-                    <a href="./part-2-1.html" class="btn-reset subnav__btn is-active">
+                    <a href="./part-2-1.html" class="btn-reset subnav__btn">
                       Раздел 1
                     </a>
                   </li>
@@ -48,7 +48,7 @@
                     </a>
                   </li>
                   <li class="subnav__item">
-                    <a href="./part-2-6.html" class="btn-reset subnav__btn">
+                    <a href="./part-2-6.html" class="btn-reset subnav__btn is-active">
                       Литература
                     </a>
                   </li>
@@ -70,39 +70,25 @@
           </nav>
         </div>
         <div class="book__content">
-          <h2 id="part-2-1" class="book__title">Раздел&nbsp;1. Механика. Основные понятия</h2>
+          <h2 id="part-2-6" class="book__title">Список использованных источников</h2>
 
-          <details class="detail book__detail">
-            <summary><b>Тема&nbsp;1.</b> Основные понятия механики</summary>
-            @include('partials/part-2/text-2-1.html')
-          </details>
-
-          <details class="detail book__detail">
-            <summary><b>Тема&nbsp;2.</b> Основные понятия биомеханики</summary>
-            @include('partials/part-2/text-2-2.html')
-          </details>
-
-          <details class="detail book__detail">
-            <summary><b>Тема&nbsp;3.</b> Основные оси и плоскости тела человека</summary>
-            @include('partials/part-2/text-2-3.html')
-          </details>
-
-          <details class="detail book__detail">
-            <summary><b>Тема&nbsp;4.</b> Положение тела в пространстве</summary>
-            @include('partials/part-2/text-2-4.html')
-          </details>
-
-          <div class="book__content-end">
-            <h3 class="book__subtitle">Итоговый тест по&nbsp;разделу</h3>
-          </div>
-
-          <details class="detail book__detail">
-            <summary>Выполнить</summary>
-            <div class="book__test">
-              @include('partials/part-2/test-2-1.html')
-            </div>
-          </details>
-
+          <ol class="book__lits">
+            <li class="book__lit">
+              Ремизов А.Н. Медицинская и&nbsp;биологическая физика: Учеб для вузов&nbsp;/ А.Н. Ремизов, А.Г. Максина, А.Я. Потапенко. &mdash;&nbsp;4-е изд., перераб.&nbsp;и&nbsp;дополн. &mdash;&nbsp;М.: Дрофа, 2003. &mdash;&nbsp;560&nbsp;с.
+            </li>
+            <li class="book__lit">
+              Мудров М.&nbsp;Ю. Биомеханика : учеб.-метод. комплекс для студентов специальности 1-03 02 01&nbsp;&laquo;Физическая культура&raquo;&nbsp;/ М.&nbsp;Ю. Мудров. &mdash;&nbsp;Новополоцк : ПГУ, 2010. &mdash;&nbsp;184&nbsp;с.
+            </li>
+            <li class="book__lit">
+              Антонов В.Ф. Биофизика: Учеб для студ. высш. учеб. заведений. &mdash;&nbsp;М.: Гуманит. изд. центр ВЛАДОС, 1999. &mdash;&nbsp;288&nbsp;с.
+            </li>
+            <li class="book__lit">
+              Черняев&nbsp;А.&nbsp;П., Наркевич Б.&nbsp;Я. Введение в&nbsp;медицинскую физику: Учеб. пособие&nbsp;&mdash; М.: ООП физического факультета МГУ, 2019. &mdash;&nbsp;81&nbsp;с.
+            </li>
+            <li class="book__lit">
+              Рубин А.&nbsp;Б. Биофизика : учебник&nbsp;/ А.Б. Рубин. &mdash;&nbsp;М.: КНОРУС, 2016. &mdash;&nbsp;192&nbsp;с.
+            </li>
+          </ol>
         </div>
       </div>
     </main>

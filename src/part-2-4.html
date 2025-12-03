@@ -28,7 +28,7 @@
                     </a>
                   </li>
                   <li class="subnav__item">
-                    <a href="./part-2-2.html" class="btn-reset subnav__btn is-active">
+                    <a href="./part-2-2.html" class="btn-reset subnav__btn">
                       Раздел 2
                     </a>
                   </li>
@@ -38,7 +38,7 @@
                     </a>
                   </li>
                   <li class="subnav__item">
-                    <a href="./part-2-4.html" class="btn-reset subnav__btn">
+                    <a href="./part-2-4.html" class="btn-reset subnav__btn is-active">
                       Раздел 4
                     </a>
                   </li>
@@ -70,50 +70,21 @@
           </nav>
         </div>
         <div class="book__content">
-          <h2 id="part-2-2" class="book__title">Раздел&nbsp;2. Кинематика</h2>
-          <p class="book__descr">
-            Положение материальной точки в&nbsp;пространстве можно задать с&nbsp;помощью:
-          </p>
-          <ol class="book__lits">
-            <li class="book__lit">
-              координат&nbsp;<i>x</i>, <i>y</i>, <i>z</i>&nbsp;(координатный способ)
-            </li>
-
-            <figure class="book__figure book__figure-text">
-              <img class="book__img book__img-big book__img-text" loading="lazy" src="./img/part-2/shema-2-2.jpg" alt="координатный способ">
-              <figcaption>Точка А&nbsp;имеет координаты&nbsp;<i>x</i>, <i>y</i>&nbsp;и&nbsp;<i>z</i>: <i>А</i>(<i>x</i>, <i>y</i>, <i>z</i>)</figcaption>
-            </figure>
-
-            <li class="book__lit">
-              радиус-вектора <b>r</b>&nbsp;(векторный способ)
-            </li>
-
-            <figure class="book__figure book__figure-text">
-              <img class="book__img book__img-big book__img-text" loading="lazy" src="./img/part-2/shema-2-3.jpg" alt="векторный способ">
-              <figcaption><b>r</b> = <b>i</b><i>x</i> + <b>j</b><i>y</i> + <b>k</b><i>z</i></figcaption>
-            </figure>
-
-          </ol>
-          <p class="book__descr">
-            Радиус-вектор точки&nbsp;&mdash; это вектор, который соединяет начало координат и&nbsp;эту точку.
-          </p>
-          <p class="book__descr">
-            Координатный и&nbsp;векторный способы описания движения эквивалентны.
-          </p>
+          <h2 id="part-2-4" class="book__title">Раздел&nbsp;4. Статика</h2>
 
           <details class="detail book__detail">
-            <summary><b>Тема&nbsp;5.</b> Пространственные характеристики движения</summary>
-            @include('partials/part-2/text-2-5.html')
+            <summary><b>Тема&nbsp;16.</b> Центр масс, центр тяжести и&nbsp;центр инерции</summary>
+            <object class="book__data" data="./part-2/2-16.pdf" type="application/pdf"></object>
           </details>
 
           <details class="detail book__detail">
-            <summary><b>Тема&nbsp;6.</b> Временные характеристики движения</summary>
-            @include('partials/part-2/text-2-6.html')
+            <summary><b>Тема&nbsp;17.</b> Условия равновесия твёрдого тела</summary>
+            <object class="book__data" data="./part-2/2-17.pdf" type="application/pdf"></object>
           </details>
 
           <details class="detail book__detail">
-            <summary><b>Тема&nbsp;7.</b> Пространственно-временные характеристики движения</summary>
-            <object class="book__data" data="./part-2/text-2-7.pdf" type="application/pdf"></object>
+            <summary><b>Тема&nbsp;18.</b> Рычаг</summary>
+            <object class="book__data" data="./part-2/2-18.pdf" type="application/pdf"></object>
           </details>
 
           <div class="book__content-end">
@@ -123,7 +94,7 @@
           <details class="detail book__detail">
             <summary>Выполнить</summary>
             <div class="book__test">
-              @include('partials/part-2/test-2-2.html')
+              @include('partials/part-2/test-2-3.html')
             </div>
           </details>
 
