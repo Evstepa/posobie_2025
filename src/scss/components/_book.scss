@@ -55,7 +55,7 @@
   &__subtitle {
     margin: 20px 0 10px;
     font-family: var(--font-family);
-    font-weight: 400;
+    font-weight: 800;
     font-style: normal;
     font-size: 20px;
     line-height: 100%;
@@ -322,6 +322,8 @@
   border-collapse: collapse;
   border-spacing: 5px;
   width: 100%;
+  font-size: 20px;
+  text-align: left;
   cursor: auto;
 
   &__head {
