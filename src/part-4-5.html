@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <div class="container book">
+        <div class="book__menu">
+          <nav class="nav book__nav v-nav">
+            <ul class="list-reset v-nav__list">
+              <li class="v-nav__item">
+                <a href="./part-1.html" class="btn-reset v-nav__btn">
+                  Математика
+                </a>
+
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-2.html" class="btn-reset v-nav__btn">
+                  Физика
+                </a>
+
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-3.html" class="btn-reset v-nav__btn">
+                  Химия
+                </a>
+
+              </li>
+              <li class="v-nav__item">
+                <a href="./part-4.html" class="btn-reset v-nav__btn is-active">
+                  Информатика
+                </a>
+                <ul class="list-reset book__subnav subnav">
+                  <li class="subnav__item">
+                    <a href="./part-4-1.html" class="btn-reset subnav__btn">
+                      Тема 1
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-4-2.html" class="btn-reset subnav__btn">
+                      Тема 2
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-4-3.html" class="btn-reset subnav__btn">
+                      Тема 3
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-4-4.html" class="btn-reset subnav__btn">
+                      Тема 4
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-4-5.html" class="btn-reset subnav__btn is-active">
+                      Тексты
+                    </a>
+                  </li>
+                  <li class="subnav__item">
+                    <a href="./part-4-6.html" class="btn-reset subnav__btn">
+                      Литература
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="book__content">
+          <h2 id="part-5-5" class="book__title">Тексты для дополнительного чтения</h2>
+
+          <details class="detail book__detail">
+            <summary>Клод Элвуд Шеннон</summary>
+            @include('partials/part-4/text-4-5-1.html')
+          </details>
+          <details class="detail book__detail">
+            <summary>Ральф Винтон Лайон Хартли</summary>
+            @include('partials/part-4/text-4-5-2.html')
+          </details>
+          <details class="detail book__detail">
+            <summary>Сэмюэл Финли Бриз Морзе</summary>
+            @include('partials/part-4/text-4-5-3.html')
+          </details>
+          <details class="detail book__detail">
+            <summary>Двоичное кодирование числовой информации</summary>
+            @include('partials/part-4/text-4-5-4.html')
+          </details>
+          <details class="detail book__detail">
+            <summary>Кодовые таблицы ASCII, ANSI и&nbsp;UNICODE</summary>
+            @include('partials/part-4/text-4-5-5.html')
+          </details>
+          <details class="detail book__detail">
+            <summary>Растровое кодирование</summary>
+            @include('partials/part-4/text-4-5-6.html')
+          </details>
+          <details class="detail book__detail">
+            <summary>Векторное кодирование</summary>
+            @include('partials/part-4/text-4-5-7.html')
+          </details>
+
+        </div>
+      </div>
+    </main>
+    @include('partials/footer.html')
+  </div>
+  @include('partials/text-end-btn.html')
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<div class="book__content">
+  <br>
+  <p class="book__descr">
+    Для хранения, обработки и&nbsp;передачи текстовой информации используют специальные кодовые таблицы. Первая кодовая таблица&nbsp;&mdash; это таблица ASCII (American Standard Code for Information Interchange, 1963&nbsp;г.). Эта таблица содержит 128 кодов (от&nbsp;00000000 до&nbsp;01111111). Коды таблицы ASCII&nbsp;&mdash; это специальные управляющие символы, &laquo;пробел&raquo;, цифры, заглавные и&nbsp;строчные буквы латинского алфавита, знаки препинания <span style="border: 1px solid;">.,:;!?</span>, скобки [](){} и&nbsp;другие знаки (рис.&nbsp;3).
+  </p>
+  <p class="book__descr">
+    Кодовые таблицы ANSI (American National Standards Institute)&nbsp;&mdash; это расширение кодовой таблицы ASCII. Таблица ANSI содержит 256&nbsp;кодов. Первые 128 кодов повторяют таблицу ASCII. Вторая часть (128 кодов от&nbsp;10000000 до&nbsp;11111111) используется для кодирования символов национальных алфавитов. Например, для кодирования букв русского алфавита используют разные расширения кодовой таблицы ASCII:
+  </p>
+
+  <ul class="book__lits">
+    <li class="book__lit">
+      Windows-1251 (CP-1251) для операционной системы Windows (рис.&nbsp;4),
+    </li>
+    <li class="book__lit">
+      KOI8-R для операционной системы Unix,
+    </li>
+    <li class="book__lit">
+      MacCyrillic для компьютеров фирмы Apple.
+    </li>
+  </ul>
+
+  <p class="book__descr">
+    Все расширения таблицы ASCII позволяют кодировать символ с&nbsp;помощью 1&nbsp;байта, то&nbsp;есть длина кода в&nbsp;этой таблице&nbsp;&mdash; 1&nbsp;байт.
+  </p>
+
+  <figure class="book__figure book__figure-text">
+    <img class="book__img book__img-text" loading="lazy" src="./img/part-4/pic-4-6.jpg" alt="ASCII">
+    <figcaption>Рисунок&nbsp;3. Таблица ASCII</figcaption>
+  </figure>
+
+  <figure class="book__figure book__figure-text">
+    <img class="book__img book__img-text" loading="lazy" src="./img/part-4/pic-4-7.jpg" alt="ASCII русский язык">
+    <figcaption>Рисунок&nbsp;4. Вторая часть кодовой таблицы ASCII для букв русского алфавитау</figcaption>
+  </figure>
+
+  <p class="book__descr">
+    В&nbsp;1991 году была создана новая кодовая таблица UNICODE, которая содержит 2<sup>20</sup>&nbsp;+&nbsp;2<sup>16</sup>&nbsp;=&nbsp;1114112 кодов для кодирования всех символов всех алфавитов. Первая часть этой таблицы совпадает с&nbsp;таблицей ASCII. В&nbsp;операционной системе Windows используют кодовую таблицу UTF-16. Длина кода одного знака в&nbsp;кодовой таблице UTF-16 может быть 2&nbsp;или 4&nbsp;байта. Кодовая таблица UTF-16 удобна для быстрой обработки текстовой информации. В&nbsp;операционной системе Unix используют кодовую таблицу UTF-8. В&nbsp;этой таблице длина кода одного знака может быть 1, 2&nbsp;или 4&nbsp;байта. Эта таблицы применяется в&nbsp;веб-разработке, обмене данными, хранении файлов.
+  </p>
+
+</div>

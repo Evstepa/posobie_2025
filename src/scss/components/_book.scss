@@ -345,15 +345,33 @@
     padding: 10px;
   }
 
-  &__cell-img {
-    vertical-align: middle;
+  &__row-head {
     text-align: center;
+    font-weight: 600;
+  }
+
+  &__row-empty {
+    height: 3rem;
   }
 
   &__cell {
     margin: 0;
     margin-bottom: 1rem;
     text-align: left;
+
+    &-img {
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    &-middle {
+      vertical-align: middle !important;
+    }
+
+    &-border {
+      border-color:transparent !important;
+      border-top: 1px solid var(--text-color) !important;
+    }
   }
 }
 
