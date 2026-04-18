@@ -227,6 +227,10 @@
     outline: 1px solid var(--border-color);
     outline-offset: 5px;
 
+    &-round-bracket {
+      list-style-type: round-bracket;
+    }
+
     &-start {
       flex-direction: column;
     }
