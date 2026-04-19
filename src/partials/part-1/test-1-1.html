@@ -1,5 +1,5 @@
 <script type="text/javascript" language="JavaScript">// <![CDATA[
- var res="123132112131";
+  var res="123132112131";
 function check_me()
 {
     var count=0;
@@ -51,7 +51,7 @@ function control(k, f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12) {
 
 function answer() {
   answ="";
-     with(document)    {
+    with(document)    {
       answ+=control(res.charAt(0) ,test.Q1[0],test.Q1[1],test.Q1[2])?"1":"0";
       answ+=control(res.charAt(1) ,test.Q2[0],test.Q2[1],test.Q2[2])?"1":"0";
       answ+=control(res.charAt(2) ,test.Q3[0],test.Q3[1],test.Q3[2])?"1":"0";
@@ -95,7 +95,7 @@ function showResult()   {
       if (answ.charAt(9)=="1") {T10.value=" + "} else {T10.value=" - "};
       if (answ.charAt(10)=="1") {T11.value=" + "} else {T11.value=" - "};
       if (answ.charAt(11)=="1") {T12.value=" + "} else {T12.value=" - "};
-     }
+    }
 }
 function showhide(obj){
     if(obj == 'none') return 'inline';
@@ -106,7 +106,7 @@ function showhide(obj){
 
 &nbsp;&nbsp;&nbsp;<span style="color:#006699;text-decoration:underline;cursor:pointer;" onclick="document.getElementById('instruction').style.display = showhide(document.getElementById('instruction').style.display)">
 Инструкция</span>
- <br/>
+<br/>
 <div id="instruction" style="display: none; width: 100%;">
 <ul>
 <li>Выберите один из вариантов в каждом из 12 вопросов;</li>
@@ -114,7 +114,7 @@ function showhide(obj){
 <li>Скрипт не покажет результат, пока Вы не ответите на все вопросы;</li>
 <li>Загляните в окно рядом с номером задания. Если ответ правильный, то там (+). Если Вы ошиблись, там (-).</li>
 <li>За каждый правильный ответ начисляется 1 балл;</li>
-<li>Оценки: менее 6 баллов - НЕУДОВЛЕТВОРИТЕЛЬНО, от 6 но менее 9 - УДОВЛЕТВОРИТЕЛЬНО, 9 и менее 12 - ХОРОШО, 12 - ОТЛИЧНО;</li>
+<li>Оценки: менее 6 баллов - НЕУДОВЛЕТВОРИТЕЛЬНО, от 6, но менее 9 - УДОВЛЕТВОРИТЕЛЬНО, 9 и менее 12 - ХОРОШО, 12 - ОТЛИЧНО;</li>
 <li>Чтобы сбросить результат тестирования, нажать кнопку "Сбросить ответы";</li>
 </ul>
 </div>

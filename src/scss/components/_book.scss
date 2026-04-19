@@ -227,10 +227,6 @@
     outline: 1px solid var(--border-color);
     outline-offset: 5px;
 
-    &-round-bracket {
-      list-style-type: round-bracket;
-    }
-
     &-start {
       flex-direction: column;
     }
@@ -282,10 +278,15 @@
 
   &__img {
     min-width: 100px;
+
     // min-height: 155px;
 
     &-small {
       min-width: 70px;
+    }
+
+    &-middle {
+      vertical-align: middle;
     }
 
     &-big {
@@ -350,8 +351,8 @@
   }
 
   &__row-head {
-    text-align: center;
     font-weight: 600;
+    text-align: center;
   }
 
   &__row-empty {
@@ -369,12 +370,12 @@
     }
 
     &-middle {
-      vertical-align: middle !important;
+      vertical-align: middle;
     }
 
     &-border {
-      border-color:transparent !important;
-      border-top: 1px solid var(--text-color) !important;
+      border-color:transparent;
+      border-top: 1px solid var(--text-color);
     }
   }
 }

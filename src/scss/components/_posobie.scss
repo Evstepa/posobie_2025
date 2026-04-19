@@ -29,19 +29,19 @@
 
     &-tbold {
       margin-top: 20px;
+      font-weight: 600;
       text-align: left;
       text-indent: 20px;
-      font-weight: 600;
     }
   }
 
   &__descr-list {
-    list-style-type: none; /* Убираем исходные маркеры */
     counter-reset:  item; /* Обнуляем счетчик списка */
+    list-style-type: none; /* Убираем исходные маркеры */
   }
 
   &__descr-item::before {
-    content: counter(item) ')'; /* Добавляем к числам скобку */
     counter-increment: item; /* Задаём имя счетчика */
+    content: counter(item) ') '; /* Добавляем к числам скобку */
   }
 }
