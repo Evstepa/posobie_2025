@@ -1,1 +1,168 @@
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+ var res="2312141323";
+function check_me()
+{
+    var count=0;
+//    with(document.test) {
+if (!document.test.Q1[0].checked&&!document.test.Q1[1].checked&&!document.test.Q1[2].checked&&!document.test.Q1[3].checked)
+{count+=1};
+if (!document.test.Q2[0].checked&&!document.test.Q2[1].checked&&!document.test.Q2[2].checked&&!document.test.Q2[3].checked)
+{count+=1};
+if (!document.test.Q3[0].checked&&!document.test.Q3[1].checked&&!document.test.Q3[2].checked&&!document.test.Q3[3].checked)
+{count+=1};
+if (!document.test.Q4[0].checked&&!document.test.Q4[1].checked&&!document.test.Q4[2].checked&&!document.test.Q4[3].checked)
+{count+=1};
+if (!document.test.Q5[0].checked&&!document.test.Q5[1].checked&&!document.test.Q5[2].checked&&!document.test.Q5[3].checked)
+{count+=1};
+if (!document.test.Q6[0].checked&&!document.test.Q6[1].checked&&!document.test.Q6[2].checked&&!document.test.Q6[3].checked)
+{count+=1};
+if (!document.test.Q7[0].checked&&!document.test.Q7[1].checked&&!document.test.Q7[2].checked&&!document.test.Q7[3].checked)
+{count+=1};
+if (!document.test.Q8[0].checked&&!document.test.Q8[1].checked&&!document.test.Q8[2].checked&&!document.test.Q8[3].checked)
+{count+=1};
+if (!document.test.Q9[0].checked&&!document.test.Q9[1].checked&&!document.test.Q9[2].checked&&!document.test.Q9[3].checked)
+{count+=1};
+if (!document.test.Q10[0].checked&&!document.test.Q10[1].checked&&!document.test.Q10[2].checked&&!document.test.Q10[3].checked)
+{count+=1};
+if (count>0) alert("Вы выполнили не все задания. Проверьте себя!")
+        else answer();
+//    }
+}
+
+function control(k, f1,f2,f3,f4,f5,f6,f7,f8,f9,f10) {
+if (k==1&&f1.checked) return true;
+if (k==2&&f2.checked) return true;
+if (k==3&&f3.checked) return true;
+if (k==4&&f4.checked) return true;
+if (k==5&&f5.checked) return true;
+if (k==6&&f6.checked) return true;
+if (k==7&&f7.checked) return true;
+if (k==8&&f8.checked) return true;
+if (k==9&&f9.checked) return true;
+if (k==10&&f10.checked) return true;
+return false;
+}
+
+function answer() {
+answ="";
+//     with(document)    {
+answ+=control(res.charAt(0), document.test.Q1[0], document.test.Q1[1], document.test.Q1[2], document.test.Q1[3])?"1":"0";
+answ+=control(res.charAt(1), document.test.Q2[0], document.test.Q2[1], document.test.Q2[2], document.test.Q2[3])?"1":"0";
+answ+=control(res.charAt(2), document.test.Q3[0], document.test.Q3[1], document.test.Q3[2], document.test.Q3[3])?"1":"0";
+answ+=control(res.charAt(3), document.test.Q4[0], document.test.Q4[1], document.test.Q4[2], document.test.Q4[3])?"1":"0";
+answ+=control(res.charAt(4), document.test.Q5[0], document.test.Q5[1], document.test.Q5[2], document.test.Q5[3])?"1":"0";
+answ+=control(res.charAt(5), document.test.Q6[0], document.test.Q6[1], document.test.Q6[2], document.test.Q6[3])?"1":"0";
+answ+=control(res.charAt(6), document.test.Q7[0], document.test.Q7[1], document.test.Q7[2], document.test.Q7[3])?"1":"0";
+answ+=control(res.charAt(7), document.test.Q8[0], document.test.Q8[1], document.test.Q8[2], document.test.Q8[3])?"1":"0";
+answ+=control(res.charAt(8), document.test.Q9[0], document.test.Q9[1], document.test.Q9[2], document.test.Q9[3])?"1":"0";
+answ+=control(res.charAt(9), document.test.Q10[0], document.test.Q10[1], document.test.Q10[2], document.test.Q10[3])?"1":"0";
+
+showResult();
+//    }
+}
+
+function showResult()   {
+    var nok=0;
+    var i,s;
+
+for (i=0; i<answ.length;i++) {nok+=answ.charAt(i)=="1"?1:0;}
+if(nok==10) s="ОТЛИЧНО";
+if(nok<10) s="ХОРОШО";
+if(nok<7.5) s="УДОВЛЕТВОРИТЕЛЬНО";
+if (nok<5) s="НЕУДОВЛЕТВОРИТЕЛЬНО";
+    document.test.s1.
+    value="Количество правильных ответов "+nok+". Ваша оценка "+s+". Посмотрите на окно рядом с номером вопроса. Если ответ правильный, там (+). Если ответ ошибочен, там (-).";
+
+//with(document.test)    {
+    if (answ.charAt(0)=="1") {document.test.T1.value=" + "} else {document.test.T1.value=" - "};
+    if (answ.charAt(1)=="1") {document.test.T2.value=" + "} else {document.test.T2.value=" - "};
+    if (answ.charAt(2)=="1") {document.test.T3.value=" + "} else {document.test.T3.value=" - "};
+    if (answ.charAt(3)=="1") {document.test.T4.value=" + "} else {document.test.T4.value=" - "};
+    if (answ.charAt(4)=="1") {document.test.T5.value=" + "} else {document.test.T5.value=" - "};
+    if (answ.charAt(5)=="1") {document.test.T6.value=" + "} else {document.test.T6.value=" - "};
+    if (answ.charAt(6)=="1") {document.test.T7.value=" + "} else {document.test.T7.value=" - "};
+    if (answ.charAt(7)=="1") {document.test.T8.value=" + "} else {document.test.T8.value=" - "};
+    if (answ.charAt(8)=="1") {document.test.T9.value=" + "} else {document.test.T9.value=" - "};
+    if (answ.charAt(9)=="1") {document.test.T10.value=" + "} else {document.test.T10.value=" - "};
+//     }
+}
+function showhide(obj){
+    if(obj == 'none') return 'inline';
+    else return 'none';
+}
+// ]]>
+</script>
+
+&nbsp;&nbsp;&nbsp;<span style="color:#006699;text-decoration:underline;cursor:pointer;" onclick="document.getElementById('instruction').style.display = showhide(document.getElementById('instruction').style.display)">
+Инструкция</span>
+ <br/>
+<div id="instruction" style="display: none; width: 100%;">
+<ul>
+<li>Выберите один из вариантов в каждом из 10 вопросов;</li>
+<li>Нажмите на кнопку "Показать результат";</li>
+<li>Скрипт не покажет результат, пока Вы не ответите на все вопросы;</li>
+<li>Загляните в окно рядом с номером задания. Если ответ правильный, то там (+). Если Вы ошиблись, там (-).</li>
+<li>За каждый правильный ответ начисляется 1 балл;</li>
+<li>Оценки: менее 5 баллов - НЕУДОВЛЕТВОРИТЕЛЬНО, от 5 но менее 7.5 - УДОВЛЕТВОРИТЕЛЬНО, 7.5 и менее 10 - ХОРОШО, 10 - ОТЛИЧНО;</li>
+<li>Чтобы сбросить результат тестирования, нажать кнопку "Сбросить ответы";</li>
+</ul>
+</div>
+<form name="test"><ol>
+<li><INPUT type="text" size="1" value="" name="T1"/><b> Научное направление, в котором стали изучать информацию в виде документов, &mdash; это ...</b><br/>
+<input type="radio" value="0" name="Q1"/> информатика<br />
+<input type="radio" value="1" name="Q1"/> наука об информации<br />
+<input type="radio" value="2" name="Q1"/> кибернетика<br />
+<input type="radio" value="3" name="Q1"/> история информации<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T2"/><b> Раздел информатики, который изучает теорию информации, теорию кодирования, математическую логику, теорию автоматов, &mdash; это ...</b><br/>
+<input type="radio" value="0" name="Q2"/> прикладная информатика<br />
+<input type="radio" value="1" name="Q2"/> вычислительная информатика<br />
+<input type="radio" value="2" name="Q2"/> теоретическая информатика<br />
+<input type="radio" value="3" name="Q2"/> математическая информатика<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T3"/><b> Раздел информатики, который изучает персональные компьютеры, прикладные программы, информационные системы, &mdash; это ...</b><br/>
+<input type="radio" value="0" name="Q3"/> прикладная информатика<br />
+<input type="radio" value="1" name="Q3"/> вычислительная информатика<br />
+<input type="radio" value="2" name="Q3"/> теоретическая информатика<br />
+<input type="radio" value="3" name="Q3"/> техническая информатика<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T4"/><b> Раздел информатики, который изучает устройство компьютеров и компьютерных систем, &mdash; это ...</b><br/>
+<input type="radio" value="0" name="Q4"/> прикладная информатика<br />
+<input type="radio" value="1" name="Q4"/> вычислительная техника<br />
+<input type="radio" value="2" name="Q4"/> теоретическая информатика<br />
+<input type="radio" value="3" name="Q4"/> техническая информатика<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T5"/><b> Основное понятие информатики &mdash; это ...</b><br/>
+<input type="radio" value="0" name="Q5"/> информация<br />
+<input type="radio" value="1" name="Q5"/> компьютер<br />
+<input type="radio" value="2" name="Q5"/> алгоритм<br />
+<input type="radio" value="3" name="Q5"/> пользователь<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T6"/><b> Сведения, данные об окружающем мире и о нас, &mdash; это ...</b><br/>
+<input type="radio" value="0" name="Q6"/> алгоритм<br />
+<input type="radio" value="1" name="Q6"/> информатика<br />
+<input type="radio" value="2" name="Q6"/> научные знания<br />
+<input type="radio" value="3" name="Q6"/> информация<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T7"/><b> Новая информация ...</b><br/>
+<input type="radio" value="0" name="Q7"/> увеличивает знания и уменьшает неопределённость этих знаний<br />
+<input type="radio" value="1" name="Q7"/> уменьшает знания и увеличивает неопределённость этих знаний<br />
+<input type="radio" value="2" name="Q7"/> уменьшает знания и уменьшает неопределённость этих знаний<br />
+<input type="radio" value="3" name="Q7"/> увеличивает знания и увеличивает неопределённость этих знаний<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T8"/><b> Виды информации по способу получения &mdash; это ...</b><br/>
+<input type="radio" value="0" name="Q8"/> зрительная, звуковая, вкусная, обонятельная, числовая<br />
+<input type="radio" value="1" name="Q8"/> числовая, звучная, вкусовая, обонятельная, осязательная<br />
+<input type="radio" value="2" name="Q8"/> зрительная, звуковая, вкусовая, обонятельная, осязательная<br />
+<input type="radio" value="3" name="Q8"/> зрительная, звучащая, вкусовая, обобщённая, оставленная<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T9"/><b> Основные формы представления информации &mdash; это ...</b><br/>
+<input type="radio" value="0" name="Q9"/> зрительная, числовая, графическая, звуковая, видеоинформация<br />
+<input type="radio" value="1" name="Q9"/> текстовая, числовая, графическая, звуковая, видеоинформация<br />
+<input type="radio" value="2" name="Q9"/> текстовая, числовая, графическая, вкусовая, видеоинформация<br />
+<input type="radio" value="3" name="Q9"/> текстовая, числовая, графическая, звуковая, мультимедийная<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T10"/><b> Если объединить несколько форм представления информации, то получается ...</b><br/>
+<input type="radio" value="0" name="Q10"/> сложная информация<br />
+<input type="radio" value="1" name="Q10"/> смешанная информация<br />
+<input type="radio" value="2" name="Q10"/> мультимедийная информация<br />
+<input type="radio" value="3" name="Q10"/> непонятная информация<br />
+<br/></li></ol>
+<CENTER>
+<P><TEXTAREA name="s1" rows="4" cols="70" readonly> </TEXTAREA> </P>
+<INPUT onclick="check_me()" type="button" value="Показать результат"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<INPUT type="reset" value="Сбросить ответы"/>
+</CENTER>
+</form>
 <!-- Test created by service http://test.fromgomel.com -->
