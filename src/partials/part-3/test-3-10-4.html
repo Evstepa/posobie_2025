@@ -1,1 +1,176 @@
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+ var res4="211112312133";
+function check_me4()
+{
+    var count=0;
+//    with(document.test) {
+if (!document.test4.Q1[0].checked&&!document.test4.Q1[1].checked&&!document.test4.Q1[2].checked)
+{count+=1};
+if (!document.test4.Q2[0].checked&&!document.test4.Q2[1].checked&&!document.test4.Q2[2].checked)
+{count+=1};
+if (!document.test4.Q3[0].checked&&!document.test4.Q3[1].checked&&!document.test4.Q3[2].checked)
+{count+=1};
+if (!document.test4.Q4[0].checked&&!document.test4.Q4[1].checked&&!document.test4.Q4[2].checked)
+{count+=1};
+if (!document.test4.Q5[0].checked&&!document.test4.Q5[1].checked&&!document.test4.Q5[2].checked)
+{count+=1};
+if (!document.test4.Q6[0].checked&&!document.test4.Q6[1].checked&&!document.test4.Q6[2].checked)
+{count+=1};
+if (!document.test4.Q7[0].checked&&!document.test4.Q7[1].checked&&!document.test4.Q7[2].checked)
+{count+=1};
+if (!document.test4.Q8[0].checked&&!document.test4.Q8[1].checked&&!document.test4.Q8[2].checked)
+{count+=1};
+if (!document.test4.Q9[0].checked&&!document.test4.Q9[1].checked&&!document.test4.Q9[2].checked)
+{count+=1};
+if (!document.test4.Q10[0].checked&&!document.test4.Q10[1].checked&&!document.test4.Q10[2].checked)
+{count+=1};
+if (!document.test4.Q11[0].checked&&!document.test4.Q11[1].checked&&!document.test4.Q11[2].checked)
+{count+=1};
+if (!document.test4.Q12[0].checked&&!document.test4.Q12[1].checked&&!document.test4.Q12[2].checked)
+{count+=1};
+if (count>0) alert("Вы выполнили не все задания. Проверьте себя!")
+        else answer4();
+//    }
+}
+
+function control4(k, f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12) {
+if (k==1&&f1.checked) return true;
+if (k==2&&f2.checked) return true;
+if (k==3&&f3.checked) return true;
+if (k==4&&f4.checked) return true;
+if (k==5&&f5.checked) return true;
+if (k==6&&f6.checked) return true;
+if (k==7&&f7.checked) return true;
+if (k==8&&f8.checked) return true;
+if (k==9&&f9.checked) return true;
+if (k==10&&f10.checked) return true;
+if (k==11&&f11.checked) return true;
+if (k==12&&f12.checked) return true;
+return false;
+}
+
+function answer4() {
+answ="";
+//     with(document)    {
+    answ+=control4(res4.charAt(0), document.test4.Q1[0], document.test4.Q1[1], document.test4.Q1[2])?"1":"0";
+    answ+=control4(res4.charAt(1), document.test4.Q2[0], document.test4.Q2[1], document.test4.Q2[2])?"1":"0";
+    answ+=control4(res4.charAt(2), document.test4.Q3[0], document.test4.Q3[1], document.test4.Q3[2])?"1":"0";
+    answ+=control4(res4.charAt(3), document.test4.Q4[0], document.test4.Q4[1], document.test4.Q4[2])?"1":"0";
+    answ+=control4(res4.charAt(4), document.test4.Q5[0], document.test4.Q5[1], document.test4.Q5[2])?"1":"0";
+    answ+=control4(res4.charAt(5), document.test4.Q6[0], document.test4.Q6[1], document.test4.Q6[2])?"1":"0";
+    answ+=control4(res4.charAt(6), document.test4.Q7[0], document.test4.Q7[1], document.test4.Q7[2])?"1":"0";
+    answ+=control4(res4.charAt(7), document.test4.Q8[0], document.test4.Q8[1], document.test4.Q8[2])?"1":"0";
+    answ+=control4(res4.charAt(8), document.test4.Q9[0], document.test4.Q9[1], document.test4.Q9[2])?"1":"0";
+    answ+=control4(res4.charAt(9), document.test4.Q10[0], document.test4.Q10[1], document.test4.Q10[2])?"1":"0";
+    answ+=control4(res4.charAt(10), document.test4.Q11[0], document.test4.Q11[1], document.test4.Q11[2])?"1":"0";
+    answ+=control4(res4.charAt(11), document.test4.Q12[0], document.test4.Q12[1], document.test4.Q12[2])?"1":"0";
+
+showResult4();
+//    }
+}
+
+function showResult4()   {
+    var nok=0;
+    var i,s;
+
+for (i=0; i<answ.length;i++) {nok+=answ.charAt(i)=="1"?1:0;}
+if(nok==12) s="ОТЛИЧНО";
+if(nok<12) s="ХОРОШО";
+if(nok<9) s="УДОВЛЕТВОРИТЕЛЬНО";
+if (nok<6) s="НЕУДОВЛЕТВОРИТЕЛЬНО";
+    document.test4.s1.
+    value="Количество правильных ответов "+nok+". Ваша оценка "+s+". Посмотрите на окно рядом с номером вопроса. Если ответ правильный, там (+). Если ответ ошибочен, там (-).";
+
+//with(document.test)    {
+    if (answ.charAt(0)=="1") {document.test4.T1.value=" + "} else {document.test4.T1.value=" - "};
+    if (answ.charAt(1)=="1") {document.test4.T2.value=" + "} else {document.test4.T2.value=" - "};
+    if (answ.charAt(2)=="1") {document.test4.T3.value=" + "} else {document.test4.T3.value=" - "};
+    if (answ.charAt(3)=="1") {document.test4.T4.value=" + "} else {document.test4.T4.value=" - "};
+    if (answ.charAt(4)=="1") {document.test4.T5.value=" + "} else {document.test4.T5.value=" - "};
+    if (answ.charAt(5)=="1") {document.test4.T6.value=" + "} else {document.test4.T6.value=" - "};
+    if (answ.charAt(6)=="1") {document.test4.T7.value=" + "} else {document.test4.T7.value=" - "};
+    if (answ.charAt(7)=="1") {document.test4.T8.value=" + "} else {document.test4.T8.value=" - "};
+    if (answ.charAt(8)=="1") {document.test4.T9.value=" + "} else {document.test4.T9.value=" - "};
+    if (answ.charAt(9)=="1") {document.test4.T10.value=" + "} else {document.test4.T10.value=" - "};
+    if (answ.charAt(10)=="1") {document.test4.T11.value=" + "} else {document.test4.T11.value=" - "};
+    if (answ.charAt(11)=="1") {document.test4.T12.value=" + "} else {document.test4.T12.value=" - "};
+//     }
+}
+function showhide4(obj){
+    if(obj == 'none') return 'inline';
+    else return 'none';
+}
+// ]]>
+</script>
+
+&nbsp;&nbsp;&nbsp;<span style="color:#006699;text-decoration:underline;cursor:pointer;" onclick="document.getElementById('instruction4').style.display = showhide4(document.getElementById('instruction4').style.display)">
+Инструкция</span>
+ <br/>
+<div id="instruction4" style="display: none; width: 100%;">
+<ul>
+<li>Выберите один из вариантов в каждом из 12 вопросов;</li>
+<li>Нажмите на кнопку "Показать результат";</li>
+<li>Скрипт не покажет результат, пока Вы не ответите на все вопросы;</li>
+<li>Загляните в окно рядом с номером задания. Если ответ правильный, то там (+). Если Вы ошиблись, там (-).</li>
+<li>За каждый правильный ответ начисляется 1 балл;</li>
+<li>Оценки: менее 6 баллов - НЕУДОВЛЕТВОРИТЕЛЬНО, от 6, но менее 9 - УДОВЛЕТВОРИТЕЛЬНО, 9 и менее 12 - ХОРОШО, 12 - ОТЛИЧНО;</li>
+<li>Чтобы сбросить результат тестирования, нажать кнопку "Сбросить ответы";</li>
+</ul>
+</div>
+<form name="test4"><ol>
+<li><INPUT type="text" size="1" value="" name="T1"/><b> Продуктами переработки нефти являются ...</b><br/>
+<input type="radio" value="0" name="Q1"/> металлы<br />
+<input type="radio" value="1" name="Q1"/> бензин, дизельное топливо, керосин, мазут<br />
+<input type="radio" value="2" name="Q1"/> сахар, соль<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T2"/><b> В каком агрегатном состоянии находится бензин?</b><br/>
+<input type="radio" value="0" name="Q2"/> жидком<br />
+<input type="radio" value="1" name="Q2"/> твёрдом<br />
+<input type="radio" value="2" name="Q2"/> газообразном<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T3"/><b> В каком агрегатном состоянии находится дизельное топливо?</b><br/>
+<input type="radio" value="0" name="Q3"/> жидком<br />
+<input type="radio" value="1" name="Q3"/> твёрдом<br />
+<input type="radio" value="2" name="Q3"/> газообразном<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T4"/><b> В каком агрегатном состоянии находится мазут?</b><br/>
+<input type="radio" value="0" name="Q4"/> жидком<br />
+<input type="radio" value="1" name="Q4"/> твёрдом<br />
+<input type="radio" value="2" name="Q4"/> газообразном<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T5"/><b> Какие из указанных свойств характерны для бензина?</b><br/>
+<input type="radio" value="0" name="Q5"/> прозрачная или бледно-жёлтая токсичная горючая жидкость, октановое число<br />
+<input type="radio" value="1" name="Q5"/> жёлтая или светло-коричневая жидкость, цетановое число, температура вспышки, содержание серы<br />
+<input type="radio" value="2" name="Q5"/> тёмно-коричневая или чёрная жидкость, температура застывания<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T6"/><b> Какие из указанных свойств характерны для дизельного топлива?</b><br/>
+<input type="radio" value="0" name="Q6"/> прозрачная или бледно-жёлтая токсичная горючая жидкость, октановое число<br />
+<input type="radio" value="1" name="Q6"/> жёлтая или светло-коричневая жидкость, цетановое число, температура вспышки, содержание серы<br />
+<input type="radio" value="2" name="Q6"/> тёмно-коричневая или чёрная жидкость, температура застывания<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T7"/><b> Какие из указанных свойств характерны для мазута?</b><br/>
+<input type="radio" value="0" name="Q7"/> прозрачная или бледно-жёлтая токсичная горючая жидкость, октановое число<br />
+<input type="radio" value="1" name="Q7"/> жёлтая или светло-коричневая жидкость, цетановое число, температура вспышки, содержание серы<br />
+<input type="radio" value="2" name="Q7"/> тёмно-коричневая или чёрная жидкость, температура застывания<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T8"/><b> Какие из указанных свойств имеет авиационный керосин?</b><br/>
+<input type="radio" value="0" name="Q8"/> прозрачное или светло-жёлтое жидкое вещество с плотностью 775...780 кг/м<sup>3</sup><br />
+<input type="radio" value="1" name="Q8"/> твёрдые или жидкие вещества с плотностью от 950 до 1500 кг/м<sup>3</sup><br />
+<input type="radio" value="2" name="Q8"/> прозрачная или бледно-жёлтая токсичная горючая жидкость с плотностью 725...780 кг/м<sup>3</sup><br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T9"/><b> Какие из указанных свойств имеет битум?</b><br/>
+<input type="radio" value="0" name="Q9"/> прозрачное или светло-жёлтое жидкое вещество с плотностью 775-780 кг/м3<br />
+<input type="radio" value="1" name="Q9"/> твёрдые или жидкие вещества с плотностью от 950 до 1 500 кг/м³<br />
+<input type="radio" value="2" name="Q9"/> прозрачная или бледно-жёлтая токсичная горючая жидкость с плотностью 725...780 кг/м³<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T10"/><b> Какое дизельное топливо используют при температуре выше 0 °С?</b><br/>
+<input type="radio" value="0" name="Q10"/> летнее<br />
+<input type="radio" value="1" name="Q10"/> зимнее<br />
+<input type="radio" value="2" name="Q10"/> арктическое<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T11"/><b> Какое дизельное топливо используют при температуре до –35&nbsp;°С?</b><br/>
+<input type="radio" value="0" name="Q11"/> летнее<br />
+<input type="radio" value="1" name="Q11"/> зимнее<br />
+<input type="radio" value="2" name="Q11"/> арктическое<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T12"/><b> Какое дизельное топливо используют при температуре до –55&nbsp;°С?</b><br/>
+<input type="radio" value="0" name="Q12"/> летнее<br />
+<input type="radio" value="1" name="Q12"/> зимнее<br />
+<input type="radio" value="2" name="Q12"/> арктическое<br />
+<br/></li></ol>
+<CENTER>
+<P><TEXTAREA name="s1" rows="4" cols="70" readonly> </TEXTAREA> </P>
+<INPUT onclick="check_me4()" type="button" value="Показать результат"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<INPUT type="reset" value="Сбросить ответы"/>
+</CENTER>
+</form>
 <!-- Test created by service http://test.fromgomel.com -->

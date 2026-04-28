@@ -1,1 +1,149 @@
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+ var res3="122321121";
+function check_me3()
+{
+    var count=0;
+//    with(document.test) {
+if (!document.test3.Q1[0].checked&&!Q1[1].checked&&!Q1[2].checked)
+{count+=1};
+if (!document.test3.Q2[0].checked&&!Q2[1].checked&&!Q2[2].checked)
+{count+=1};
+if (!document.test3.Q3[0].checked&&!Q3[1].checked&&!Q3[2].checked)
+{count+=1};
+if (!document.test3.Q4[0].checked&&!Q4[1].checked&&!Q4[2].checked)
+{count+=1};
+if (!document.test3.Q5[0].checked&&!Q5[1].checked&&!Q5[2].checked)
+{count+=1};
+if (!document.test3.Q6[0].checked&&!Q6[1].checked&&!Q6[2].checked)
+{count+=1};
+if (!document.test3.Q7[0].checked&&!Q7[1].checked&&!Q7[2].checked)
+{count+=1};
+if (!document.test3.Q8[0].checked&&!Q8[1].checked&&!Q8[2].checked)
+{count+=1};
+if (!document.test3.Q9[0].checked&&!Q9[1].checked&&!Q9[2].checked)
+{count+=1};
+if (count>0) alert("Вы выполнили не все задания. Проверьте себя!")
+        else answer3();
+//    }
+}
+
+function control3(k, f1,f2,f3,f4,f5,f6,f7,f8,f9) {
+if (k==1&&f1.checked) return true;
+if (k==2&&f2.checked) return true;
+if (k==3&&f3.checked) return true;
+if (k==4&&f4.checked) return true;
+if (k==5&&f5.checked) return true;
+if (k==6&&f6.checked) return true;
+if (k==7&&f7.checked) return true;
+if (k==8&&f8.checked) return true;
+if (k==9&&f9.checked) return true;
+return false;
+}
+
+function answer3() {
+answ="";
+//     with(document)    {
+    answ+=control3(res3.charAt(0), document.test3.Q1[0], document.test3.Q1[1], document.test3.Q1[2])?"1":"0";
+    answ+=control3(res3.charAt(1), document.test3.Q2[0], document.test3.Q2[1], document.test3.Q2[2])?"1":"0";
+    answ+=control3(res3.charAt(2), document.test3.Q3[0], document.test3.Q3[1], document.test3.Q3[2])?"1":"0";
+    answ+=control3(res3.charAt(3), document.test3.Q4[0], document.test3.Q4[1], document.test3.Q4[2])?"1":"0";
+    answ+=control3(res3.charAt(4), document.test3.Q5[0], document.test3.Q5[1], document.test3.Q5[2])?"1":"0";
+    answ+=control3(res3.charAt(5), document.test3.Q6[0], document.test3.Q6[1], document.test3.Q6[2])?"1":"0";
+    answ+=control3(res3.charAt(6), document.test3.Q7[0], document.test3.Q7[1], document.test3.Q7[2])?"1":"0";
+    answ+=control3(res3.charAt(7), document.test3.Q8[0], document.test3.Q8[1], document.test3.Q8[2])?"1":"0";
+    answ+=control3(res3.charAt(8), document.test3.Q9[0], document.test3.Q9[1], document.test3.Q9[2])?"1":"0";
+
+showResult3();
+//    }
+}
+
+function showResult3()   {
+    var nok=0;
+    var i,s;
+
+for (i=0; i<answ.length;i++) {nok+=answ.charAt(i)=="1"?1:0;}
+if(nok==9) s="ОТЛИЧНО";
+if(nok<9) s="ХОРОШО";
+if(nok<6.75) s="УДОВЛЕТВОРИТЕЛЬНО";
+if (nok<4.5) s="НЕУДОВЛЕТВОРИТЕЛЬНО";
+    document.test3.s1.
+    value="Количество правильных ответов "+nok+". Ваша оценка "+s+". Посмотрите на окно рядом с номером вопроса. Если ответ правильный, там (+). Если ответ ошибочен, там (-).";
+
+//with(document.test)    {
+    if (answ.charAt(0)=="1") {document.test3.T1.value=" + "} else {document.test3.T1.value=" - "};
+    if (answ.charAt(1)=="1") {document.test3.T2.value=" + "} else {document.test3.T2.value=" - "};
+    if (answ.charAt(2)=="1") {document.test3.T3.value=" + "} else {document.test3.T3.value=" - "};
+    if (answ.charAt(3)=="1") {document.test3.T4.value=" + "} else {document.test3.T4.value=" - "};
+    if (answ.charAt(4)=="1") {document.test3.T5.value=" + "} else {document.test3.T5.value=" - "};
+    if (answ.charAt(5)=="1") {document.test3.T6.value=" + "} else {document.test3.T6.value=" - "};
+    if (answ.charAt(6)=="1") {document.test3.T7.value=" + "} else {document.test3.T7.value=" - "};
+    if (answ.charAt(7)=="1") {document.test3.T8.value=" + "} else {document.test3.T8.value=" - "};
+    if (answ.charAt(8)=="1") {document.test3.T9.value=" + "} else {document.test3.T9.value=" - "};
+//   }
+}
+function showhide3(obj){
+    if(obj == 'none') return 'inline';
+    else return 'none';
+}
+// ]]>
+</script>
+
+&nbsp;&nbsp;&nbsp;<span style="color:#006699;text-decoration:underline;cursor:pointer;" onclick="document.getElementById('instruction3').style.display = showhide3(document.getElementById('instruction3').style.display)">
+Инструкция</span>
+ <br/>
+<div id="instruction3" style="display: none; width: 100%;">
+<ul>
+<li>Выберите один из вариантов в каждом из 9 вопросов;</li>
+<li>Нажмите на кнопку "Показать результат";</li>
+<li>Скрипт не покажет результат, пока Вы не ответите на все вопросы;</li>
+<li>Загляните в окно рядом с номером задания. Если ответ правильный, то там (+). Если Вы ошиблись, там (-).</li>
+<li>За каждый правильный ответ начисляется 1 балл;</li>
+<li>Оценки: менее 4.5 баллов - НЕУДОВЛЕТВОРИТЕЛЬНО, от 4.5, но менее 6.75 - УДОВЛЕТВОРИТЕЛЬНО, 6.75 и менее 9 - ХОРОШО, 9 - ОТЛИЧНО;</li>
+<li>Чтобы сбросить результат тестирования, нажать кнопку "Сбросить ответы";</li>
+</ul>
+</div>
+<form name="test3"><ol>
+<li><INPUT type="text" size="1" value="" name="T1"/><b> Нефть – это ...</b><br/>
+<input type="radio" value="0" name="Q1"/> жидкое вещество<br />
+<input type="radio" value="1" name="Q1"/> твёрдое вещество<br />
+<input type="radio" value="2" name="Q1"/> газообразное вещество<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T2"/><b> Каким цветом обладает нефть?</b><br/>
+<input type="radio" value="0" name="Q2"/> белым<br />
+<input type="radio" value="1" name="Q2"/> чёрным<br />
+<input type="radio" value="2" name="Q2"/> фиолетовым<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T3"/><b> Какой запах у нефти?</b><br/>
+<input type="radio" value="0" name="Q3"/> не имеет запаха<br />
+<input type="radio" value="1" name="Q3"/> специфический<br />
+<input type="radio" value="2" name="Q3"/> характерный<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T4"/><b> Как называется способ добычи нефти, когда её извлекают из скважины под давлением?</b><br/>
+<input type="radio" value="0" name="Q4"/> насосный<br />
+<input type="radio" value="1" name="Q4"/> газлифтный<br />
+<input type="radio" value="2" name="Q4"/> фонтанный<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T5"/><b> Какое название имеет способ добычи нефти, когда для её подъёма используют сжатый газ?</b><br/>
+<input type="radio" value="0" name="Q5"/> насосный<br />
+<input type="radio" value="1" name="Q5"/> газлифтный<br />
+<input type="radio" value="2" name="Q5"/> фонтанный <br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T6"/><b> Каким способом добывают нефть с помощью насосов?</b><br/>
+<input type="radio" value="0" name="Q6"/> насосный<br />
+<input type="radio" value="1" name="Q6"/> газлифтный<br />
+<input type="radio" value="2" name="Q6"/> фонтанный<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T7"/><b> Переработка нефти делится на ...</b><br/>
+<input type="radio" value="0" name="Q7"/> первичную и вторичную<br />
+<input type="radio" value="1" name="Q7"/> первичную<br />
+<input type="radio" value="2" name="Q7"/> вторичную<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T8"/><b> Первичная переработка нефти – это ...</b><br/>
+<input type="radio" value="0" name="Q8"/> гидроочистка, риформинг, изомеризация<br />
+<input type="radio" value="1" name="Q8"/> атмосферная перегонка, вакуумная перегонка<br />
+<input type="radio" value="2" name="Q8"/> риформинг, вакуумная перегонка<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T9"/><b> Вторичная переработка нефти – это ...</b><br/>
+<input type="radio" value="0" name="Q9"/> гидроочистка, риформинг, изомеризация<br />
+<input type="radio" value="1" name="Q9"/> атмосферная перегонка, вакуумная перегонка<br />
+<input type="radio" value="2" name="Q9"/> риформинг, вакуумная перегонка<br />
+<br/></li></ol>
+<CENTER>
+<P><TEXTAREA name="s1" rows="4" cols="70" readonly> </TEXTAREA> </P>
+<INPUT onclick="check_me3()" type="button" value="Показать результат"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<INPUT type="reset" value="Сбросить ответы"/>
+</CENTER>
+</form>
 <!-- Test created by service http://test.fromgomel.com -->

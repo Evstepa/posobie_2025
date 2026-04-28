@@ -1,1 +1,158 @@
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+ var res7="1231231322";
+function check_me7()
+{
+    var count=0;
+//    with(document.test) {
+if (!document.test7.Q1[0].checked&&!document.test7.Q1[1].checked&&!document.test7.Q1[2].checked)
+{count+=1};
+if (!document.test7.Q2[0].checked&&!document.test7.Q2[1].checked&&!document.test7.Q2[2].checked)
+{count+=1};
+if (!document.test7.Q3[0].checked&&!document.test7.Q3[1].checked&&!document.test7.Q3[2].checked)
+{count+=1};
+if (!document.test7.Q4[0].checked&&!document.test7.Q4[1].checked&&!document.test7.Q4[2].checked)
+{count+=1};
+if (!document.test7.Q5[0].checked&&!document.test7.Q5[1].checked&&!document.test7.Q5[2].checked)
+{count+=1};
+if (!document.test7.Q6[0].checked&&!document.test7.Q6[1].checked&&!document.test7.Q6[2].checked)
+{count+=1};
+if (!document.test7.Q7[0].checked&&!document.test7.Q7[1].checked&&!document.test7.Q7[2].checked)
+{count+=1};
+if (!document.test7.Q8[0].checked&&!document.test7.Q8[1].checked&&!document.test7.Q8[2].checked)
+{count+=1};
+if (!document.test7.Q9[0].checked&&!document.test7.Q9[1].checked&&!document.test7.Q9[2].checked)
+{count+=1};
+if (!document.test7.Q10[0].checked&&!document.test7.Q10[1].checked&&!document.test7.Q10[2].checked)
+{count+=1};
+if (count>0) alert("Вы выполнили не все задания. Проверьте себя!")
+        else answer7();
+//    }
+}
+
+function control7(k, f1,f2,f3,f4,f5,f6,f7,f8,f9,f10) {
+if (k==1&&f1.checked) return true;
+if (k==2&&f2.checked) return true;
+if (k==3&&f3.checked) return true;
+if (k==4&&f4.checked) return true;
+if (k==5&&f5.checked) return true;
+if (k==6&&f6.checked) return true;
+if (k==7&&f7.checked) return true;
+if (k==8&&f8.checked) return true;
+if (k==9&&f9.checked) return true;
+if (k==10&&f10.checked) return true;
+return false;
+}
+
+function answer7() {
+answ="";
+//     with(document)    {
+    answ+=control7(res7.charAt(0), document.test7.Q1[0], document.test7.Q1[1], document.test7.Q1[2])?"1":"0";
+    answ+=control7(res7.charAt(1), document.test7.Q2[0], document.test7.Q2[1], document.test7.Q2[2])?"1":"0";
+    answ+=control7(res7.charAt(2), document.test7.Q3[0], document.test7.Q3[1], document.test7.Q3[2])?"1":"0";
+    answ+=control7(res7.charAt(3), document.test7.Q4[0], document.test7.Q4[1], document.test7.Q4[2])?"1":"0";
+    answ+=control7(res7.charAt(4), document.test7.Q5[0], document.test7.Q5[1], document.test7.Q5[2])?"1":"0";
+    answ+=control7(res7.charAt(5), document.test7.Q6[0], document.test7.Q6[1], document.test7.Q6[2])?"1":"0";
+    answ+=control7(res7.charAt(6), document.test7.Q7[0], document.test7.Q7[1], document.test7.Q7[2])?"1":"0";
+    answ+=control7(res7.charAt(7), document.test7.Q8[0], document.test7.Q8[1], document.test7.Q8[2])?"1":"0";
+    answ+=control7(res7.charAt(8), document.test7.Q9[0], document.test7.Q9[1], document.test7.Q9[2])?"1":"0";
+    answ+=control7(res7.charAt(9), document.test7.Q10[0], document.test7.Q10[1], document.test7.Q10[2])?"1":"0";
+
+showResult7();
+//    }
+}
+
+function showResult7()   {
+    var nok=0;
+    var i,s;
+
+for (i=0; i<answ.length;i++) {nok+=answ.charAt(i)=="1"?1:0;}
+if(nok==10) s="ОТЛИЧНО";
+if(nok<10) s="ХОРОШО";
+if(nok<7.5) s="УДОВЛЕТВОРИТЕЛЬНО";
+if (nok<5) s="НЕУДОВЛЕТВОРИТЕЛЬНО";
+    document.test7.s1.
+    value="Количество правильных ответов "+nok+". Ваша оценка "+s+". Посмотрите на окно рядом с номером вопроса. Если ответ правильный, там (+). Если ответ ошибочен, там (-).";
+
+//with(document.test)    {
+    if (answ.charAt(0)=="1") {document.test7.T1.value=" + "} else {document.test7.T1.value=" - "};
+    if (answ.charAt(1)=="1") {document.test7.T2.value=" + "} else {document.test7.T2.value=" - "};
+    if (answ.charAt(2)=="1") {document.test7.T3.value=" + "} else {document.test7.T3.value=" - "};
+    if (answ.charAt(3)=="1") {document.test7.T4.value=" + "} else {document.test7.T4.value=" - "};
+    if (answ.charAt(4)=="1") {document.test7.T5.value=" + "} else {document.test7.T5.value=" - "};
+    if (answ.charAt(5)=="1") {document.test7.T6.value=" + "} else {document.test7.T6.value=" - "};
+    if (answ.charAt(6)=="1") {document.test7.T7.value=" + "} else {document.test7.T7.value=" - "};
+    if (answ.charAt(7)=="1") {document.test7.T8.value=" + "} else {document.test7.T8.value=" - "};
+    if (answ.charAt(8)=="1") {document.test7.T9.value=" + "} else {document.test7.T9.value=" - "};
+    if (answ.charAt(9)=="1") {document.test7.T10.value=" + "} else {document.test7.T10.value=" - "};
+//     }
+}
+function showhide7(obj){
+    if(obj == 'none') return 'inline';
+    else return 'none';
+}
+// ]]>
+</script>
+
+&nbsp;&nbsp;&nbsp;<span style="color:#006699;text-decoration:underline;cursor:pointer;" onclick="document.getElementById('instruction7').style.display = showhide7(document.getElementById('instruction7').style.display)">
+Инструкция</span>
+ <br/>
+<div id="instruction7" style="display: none; width: 100%;">
+<ul>
+<li>Выберите один из вариантов в каждом из 10 вопросов;</li>
+<li>Нажмите на кнопку "Показать результат";</li>
+<li>Скрипт не покажет результат, пока Вы не ответите на все вопросы;</li>
+<li>Загляните в окно рядом с номером задания. Если ответ правильный, то там (+). Если Вы ошиблись, там (-).</li>
+<li>За каждый правильный ответ начисляется 1 балл;</li>
+<li>Оценки: менее 5 баллов - НЕУДОВЛЕТВОРИТЕЛЬНО, от 5, но менее 7.5 - УДОВЛЕТВОРИТЕЛЬНО, 7.5 и менее 10 - ХОРОШО, 10 - ОТЛИЧНО;</li>
+<li>Чтобы сбросить результат тестирования, нажать кнопку "Сбросить ответы";</li>
+</ul>
+</div>
+<form name="test7"><ol>
+<li><INPUT type="text" size="1" value="" name="T1"/><b> Теплоизоляционные материалы защищают от ...</b><br/>
+<input type="radio" value="0" name="Q1"/> перегрева при высоких температурах и потери тепла при низких температурах<br />
+<input type="radio" value="1" name="Q1"/> от внутреннего и внешнего шума в зданиях<br />
+<input type="radio" value="2" name="Q1"/> от проникновения воды и влаги<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T2"/><b> Акустические материалы защищают от ...</b><br/>
+<input type="radio" value="0" name="Q2"/> перегрева при высоких температурах и потери тепла при низких температурах<br />
+<input type="radio" value="1" name="Q2"/> от внутреннего и внешнего шума в зданиях<br />
+<input type="radio" value="2" name="Q2"/> от проникновения воды и влаги<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T3"/><b> Гидроизоляционные материалы защищают от ...</b><br/>
+<input type="radio" value="0" name="Q3"/> перегрева при высоких температурах и потери тепла при низких температурах<br />
+<input type="radio" value="1" name="Q3"/> от внутреннего и внешнего шума в зданиях<br />
+<input type="radio" value="2" name="Q3"/> от проникновения воды и влаги<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T4"/><b> Кровельные материалы защищают крышу здания от ...</b><br/>
+<input type="radio" value="0" name="Q4"/> природных явлений и перепадов температур<br />
+<input type="radio" value="1" name="Q4"/> атмосферных осадков<br />
+<input type="radio" value="2" name="Q4"/> открытого огня<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T5"/><b> Отделочные материалы защищают от ...</b><br/>
+<input type="radio" value="0" name="Q5"/> природных явлений и перепадов температур<br />
+<input type="radio" value="1" name="Q5"/> атмосферных осадков<br />
+<input type="radio" value="2" name="Q5"/> открытого огня<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T6"/><b> Огнеупорные материалы защищают от ...</b><br/>
+<input type="radio" value="0" name="Q6"/> природных явлений и перепадов температур<br />
+<input type="radio" value="1" name="Q6"/> атмосферных осадков<br />
+<input type="radio" value="2" name="Q6"/> открытого огня<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T7"/><b> Физические свойства строительных материалов:</b><br/>
+<input type="radio" value="0" name="Q7"/> удельный вес, плотность, пористость<br />
+<input type="radio" value="1" name="Q7"/> водопоглощение, влажность, гигроскопичность<br />
+<input type="radio" value="2" name="Q7"/> прочность, твёрдость, истираемость<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T8"/><b> Механические свойства строительных материалов:</b><br/>
+<input type="radio" value="0" name="Q8"/> удельный вес, плотность, пористость<br />
+<input type="radio" value="1" name="Q8"/> теплопроводность, теплоёмкость, огнестойкость<br />
+<input type="radio" value="2" name="Q8"/> прочность, твёрдость, истираемость<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T9"/><b> Свойства материалов при воздействии воды и отрицательных температур:</b><br/>
+<input type="radio" value="0" name="Q9"/> удельный вес, плотность, пористость<br />
+<input type="radio" value="1" name="Q9"/> водопоглощение, влажность, гигроскопичность<br />
+<input type="radio" value="2" name="Q9"/> прочность, твёрдость, истираемость<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T10"/><b> Свойства материалов при воздействии тепла:</b><br/>
+<input type="radio" value="0" name="Q10"/> удельный вес, плотность, пористость<br />
+<input type="radio" value="1" name="Q10"/> теплопроводность, теплоёмкость, огнестойкость<br />
+<input type="radio" value="2" name="Q10"/> прочность, твёрдость, истираемость<br />
+<br/></li></ol>
+<CENTER>
+<P><TEXTAREA name="s1" rows="4" cols="70" readonly> </TEXTAREA> </P>
+<INPUT onclick="check_me7()" type="button" value="Показать результат"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<INPUT type="reset" value="Сбросить ответы"/>
+</CENTER>
+</form>
 <!-- Test created by service http://test.fromgomel.com -->

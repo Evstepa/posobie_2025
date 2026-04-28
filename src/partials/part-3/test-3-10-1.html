@@ -1,1 +1,167 @@
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+ var res1="11212323122";
+function check_me1()
+{
+    var count=0;
+//    with(document.test) {
+if (!document.test1.Q1[0].checked&&!document.test1.Q1[1].checked&&!document.test1.Q1[2].checked)
+{count+=1};
+if (!document.test1.Q2[0].checked&&!document.test1.Q2[1].checked&&!document.test1.Q2[2].checked)
+{count+=1};
+if (!document.test1.Q3[0].checked&&!document.test1.Q3[1].checked&&!document.test1.Q3[2].checked)
+{count+=1};
+if (!document.test1.Q4[0].checked&&!document.test1.Q4[1].checked&&!document.test1.Q4[2].checked)
+{count+=1};
+if (!document.test1.Q5[0].checked&&!document.test1.Q5[1].checked&&!document.test1.Q5[2].checked)
+{count+=1};
+if (!document.test1.Q6[0].checked&&!document.test1.Q6[1].checked&&!document.test1.Q6[2].checked)
+{count+=1};
+if (!document.test1.Q7[0].checked&&!document.test1.Q7[1].checked&&!document.test1.Q7[2].checked)
+{count+=1};
+if (!document.test1.Q8[0].checked&&!document.test1.Q8[1].checked&&!document.test1.Q8[2].checked)
+{count+=1};
+if (!document.test1.Q9[0].checked&&!document.test1.Q9[1].checked&&!document.test1.Q9[2].checked)
+{count+=1};
+if (!document.test1.Q10[0].checked&&!document.test1.Q10[1].checked&&!document.test1.Q10[2].checked)
+{count+=1};
+if (!document.test1.Q11[0].checked&&!document.test1.Q11[1].checked&&!document.test1.Q11[2].checked)
+{count+=1};
+if (count>0) alert("Вы выполнили не все задания. Проверьте себя!")
+        else answer1();
+//    }
+}
+
+function control1(k, f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11) {
+if (k==1&&f1.checked) return true;
+if (k==2&&f2.checked) return true;
+if (k==3&&f3.checked) return true;
+if (k==4&&f4.checked) return true;
+if (k==5&&f5.checked) return true;
+if (k==6&&f6.checked) return true;
+if (k==7&&f7.checked) return true;
+if (k==8&&f8.checked) return true;
+if (k==9&&f9.checked) return true;
+if (k==10&&f10.checked) return true;
+if (k==11&&f11.checked) return true;
+return false;
+}
+
+function answer1() {
+answ="";
+//     with(document)    {
+    answ+=control1(res1.charAt(0), document.test1.Q1[0], document.test1.Q1[1], document.test1.Q1[2])?"1":"0";
+    answ+=control1(res1.charAt(1), document.test1.Q2[0], document.test1.Q2[1], document.test1.Q2[2])?"1":"0";
+    answ+=control1(res1.charAt(2), document.test1.Q3[0], document.test1.Q3[1], document.test1.Q3[2])?"1":"0";
+    answ+=control1(res1.charAt(3), document.test1.Q4[0], document.test1.Q4[1], document.test1.Q4[2])?"1":"0";
+    answ+=control1(res1.charAt(4), document.test1.Q5[0], document.test1.Q5[1], document.test1.Q5[2])?"1":"0";
+    answ+=control1(res1.charAt(5), document.test1.Q6[0], document.test1.Q6[1], document.test1.Q6[2])?"1":"0";
+    answ+=control1(res1.charAt(6), document.test1.Q7[0], document.test1.Q7[1], document.test1.Q7[2])?"1":"0";
+    answ+=control1(res1.charAt(7), document.test1.Q8[0], document.test1.Q8[1], document.test1.Q8[2])?"1":"0";
+    answ+=control1(res1.charAt(8), document.test1.Q9[0], document.test1.Q9[1], document.test1.Q9[2])?"1":"0";
+    answ+=control1(res1.charAt(9), document.test1.Q10[0], document.test1.Q10[1], document.test1.Q10[2])?"1":"0";
+    answ+=control1(res1.charAt(10), document.test1.Q11[0], document.test1.Q11[1], document.test1.Q11[2])?"1":"0";
+
+showResult1();
+//    }
+}
+
+function showResult1()   {
+    var nok=0;
+    var i,s;
+
+for (i=0; i<answ.length;i++) {nok+=answ.charAt(i)=="1"?1:0;}
+if(nok==11) s="ОТЛИЧНО";
+if(nok<11) s="ХОРОШО";
+if(nok<8.25) s="УДОВЛЕТВОРИТЕЛЬНО";
+if (nok<5.5) s="НЕУДОВЛЕТВОРИТЕЛЬНО";
+    document.test1.s1.
+    value="Количество правильных ответов "+nok+". Ваша оценка "+s+". Посмотрите на окно рядом с номером вопроса. Если ответ правильный, там (+). Если ответ ошибочен, там (-).";
+
+//with(document.test)    {
+    if (answ.charAt(0)=="1") {document.test1.T1.value=" + "} else {document.test1.T1.value=" - "};
+    if (answ.charAt(1)=="1") {document.test1.T2.value=" + "} else {document.test1.T2.value=" - "};
+    if (answ.charAt(2)=="1") {document.test1.T3.value=" + "} else {document.test1.T3.value=" - "};
+    if (answ.charAt(3)=="1") {document.test1.T4.value=" + "} else {document.test1.T4.value=" - "};
+    if (answ.charAt(4)=="1") {document.test1.T5.value=" + "} else {document.test1.T5.value=" - "};
+    if (answ.charAt(5)=="1") {document.test1.T6.value=" + "} else {document.test1.T6.value=" - "};
+    if (answ.charAt(6)=="1") {document.test1.T7.value=" + "} else {document.test1.T7.value=" - "};
+    if (answ.charAt(7)=="1") {document.test1.T8.value=" + "} else {document.test1.T8.value=" - "};
+    if (answ.charAt(8)=="1") {document.test1.T9.value=" + "} else {document.test1.T9.value=" - "};
+    if (answ.charAt(9)=="1") {document.test1.T10.value=" + "} else {document.test1.T10.value=" - "};
+    if (answ.charAt(10)=="1") {document.test1.T11.value=" + "} else {document.test1.T11.value=" - "};
+//     }
+}
+function showhide1(obj){
+    if(obj == 'none') return 'inline';
+    else return 'none';
+}
+// ]]>
+</script>
+
+&nbsp;&nbsp;&nbsp;<span style="color:#006699;text-decoration:underline;cursor:pointer;" onclick="document.getElementById('instruction1').style.display = showhide1(document.getElementById('instruction1').style.display)">
+Инструкция</span>
+ <br/>
+<div id="instruction1" style="display: none; width: 100%;">
+<ul>
+<li>Выберите один из вариантов в каждом из 11 вопросов;</li>
+<li>Нажмите на кнопку "Показать результат";</li>
+<li>Скрипт не покажет результат, пока Вы не ответите на все вопросы;</li>
+<li>Загляните в окно рядом с номером задания. Если ответ правильный, то там (+). Если Вы ошиблись, там (-).</li>
+<li>За каждый правильный ответ начисляется 1 балл;</li>
+<li>Оценки: менее 5.5 баллов - НЕУДОВЛЕТВОРИТЕЛЬНО, от 5.5, но менее 8.25 - УДОВЛЕТВОРИТЕЛЬНО, 8.25 и менее 11 - ХОРОШО, 11 - ОТЛИЧНО;</li>
+<li>Чтобы сбросить результат тестирования, нажать кнопку "Сбросить ответы";</li>
+</ul>
+</div>
+<form name="test1"><ol>
+<li><INPUT type="text" size="1" value="" name="T1"/><b> Эксперимент – это ...</b><br/>
+<input type="radio" value="0" name="Q1"/> научный опыт<br />
+<input type="radio" value="1" name="Q1"/> рассказ<br />
+<input type="radio" value="2" name="Q1"/> экскурсия<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T2"/><b> Какую одежду нужно надевать в лаборатории?</b><br/>
+<input type="radio" value="0" name="Q2"/> халат<br />
+<input type="radio" value="1" name="Q2"/> шапку<br />
+<input type="radio" value="2" name="Q2"/> комбинезон<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T3"/><b> Что нужно использовать при работе с опасными веществами?</b><br/>
+<input type="radio" value="0" name="Q3"/> халат, шапку, перчатки<br />
+<input type="radio" value="1" name="Q3"/> респиратор, защитные очки, перчатки<br />
+<input type="radio" value="2" name="Q3"/> защитную одежду<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T4"/><b> Что нужно знать при работе с приборами?</b><br/>
+<input type="radio" value="0" name="Q4"/> правила работы с ними<br />
+<input type="radio" value="1" name="Q4"/> как их ремонтировать<br />
+<input type="radio" value="2" name="Q4"/> ничего знать не нужно<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T5"/><b> Можно ли пробовать химические вещества на вкус?</b><br/>
+<input type="radio" value="0" name="Q5"/> разрешено, это не опасно для жизни<br />
+<input type="radio" value="1" name="Q5"/> запрещено, это очень опасно для жизни<br />
+<input type="radio" value="2" name="Q5"/> это полезно и вкусно<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T6"/><b> Как правильно определять запах вещества?</b><br/>
+<input type="radio" value="0" name="Q6"/> наклониться и вдохнуть пары<br />
+<input type="radio" value="1" name="Q6"/> направить пары или газы от лица к сосуду рукой<br />
+<input type="radio" value="2" name="Q6"/> направить пары или газы от сосуда к лицу рукой<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T7"/><b> Какими лабораторными инструментами можно брать твёрдые вещества?</b><br/>
+<input type="radio" value="0" name="Q7"/> пипетка, груша, пинцет<br />
+<input type="radio" value="1" name="Q7"/> шпатель, пинцет, ложечка<br />
+<input type="radio" value="2" name="Q7"/> ложечка, пипетка, шпатель<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T8"/><b> Какими лабораторными инструментами можно брать жидкие вещества?</b><br/>
+<input type="radio" value="0" name="Q8"/> груша, пинцет<br />
+<input type="radio" value="1" name="Q8"/> пипетка, груша<br />
+<input type="radio" value="2" name="Q8"/> ложечка, пипетка<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T9"/><b> Как правильно готовить растворы кислот?</b><br/>
+<input type="radio" value="0" name="Q9"/> в воду медленно добавляют кислоту, постоянно перемешивая<br />
+<input type="radio" value="1" name="Q9"/> быстро сливают воду и кислоту вместе и перемешивают<br />
+<input type="radio" value="2" name="Q9"/> в кислоту медленно добавляют воду постоянно перемешивая<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T10"/><b> Какую посуду используют, если выделяется тепло при смешивании веществ?</b><br/>
+<input type="radio" value="0" name="Q10"/> пластиковую<br />
+<input type="radio" value="1" name="Q10"/> термостойкую<br />
+<input type="radio" value="2" name="Q10"/> алюминиевую<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T11"/><b> Как правильно проводят растворение твёрдых щелочей?</b><br/>
+<input type="radio" value="0" name="Q11"/> воду добавляют в твёрдую щёлочь и не перемешивают<br />
+<input type="radio" value="1" name="Q11"/> твёрдые щёлочи небольшими кусочками добавляют в воду, постоянно перемешивая<br />
+<input type="radio" value="2" name="Q11"/> вёрдую щёлочь и воду быстро соединяют вместе и оставляют растворяться<br />
+<br/></li></ol>
+<CENTER>
+<P><TEXTAREA name="s1" rows="4" cols="70" readonly> </TEXTAREA> </P>
+<INPUT onclick="check_me1()" type="button" value="Показать результат"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<INPUT type="reset" value="Сбросить ответы"/>
+</CENTER>
+</form>
 <!-- Test created by service http://test.fromgomel.com -->
